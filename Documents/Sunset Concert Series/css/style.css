@@ -3,13 +3,13 @@
 }
 
 body{
-  border: solid 4px #8DAE37;
+  border: ;
   margin:auto;
   background-color: #fff;
 }
 
 h1  {
-
+  text-align: center;
 }
 
 .navbar ul {
