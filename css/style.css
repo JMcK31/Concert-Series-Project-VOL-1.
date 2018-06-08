@@ -2,19 +2,21 @@
   box-sizing: border-box;
 }
 
+h1  {
+  color: purple;
+  text-align: center;
+  padding: 100px;
 
-.container {
-  display: inline-block;
 }
+
+/* .container {
+  display: inline-block;
+} */
 
 body{
   border:  3px, solid, red;
   margin: auto;
   background-color: #fff;
-}
-
-h1 span {
-  text-align: center;
 }
 
 .navbar ul {
@@ -24,6 +26,7 @@ h1 span {
   margin: 0;
 }
 
-.poster {
-
+.mainbody  {
+  border: 3px, solid, darkred;
+  text-align: center;
 }
