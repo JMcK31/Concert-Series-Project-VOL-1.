@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
-}
-
+  border: 3px, solid, Blueviolet;
 h1  {
   color: purple;
   text-align: center;
@@ -9,17 +8,17 @@ h1  {
 
 }
 
-/* .container {
+.container {
   display: inline-block;
-} */
+}
 
-body{
+body  {
   border:  3px, solid, red;
   margin: auto;
   background-color: #fff;
 }
 
-.navbar ul {
+.navbar ul  {
   list-style: none;
   text-align: center;
   padding: 0;
