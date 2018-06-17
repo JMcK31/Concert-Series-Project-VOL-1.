@@ -1,0 +1,20 @@
+.container {
+  display: inline-block;
+}
+
+body{
+  border: ;
+  margin:auto;
+  background-color: #fff;
+}
+
+h1  {
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
