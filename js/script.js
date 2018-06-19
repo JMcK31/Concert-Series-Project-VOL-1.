@@ -1,5 +1,5 @@
-$('')
-    .hide()
-    .slideDown(1000)
-    .delay(3000)
-    ;
+// $('')
+//     .hide()
+//     .slideDown(1000)
+//     .delay(3000)
+//     .slideUp();
