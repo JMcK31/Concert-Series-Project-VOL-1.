@@ -1,34 +1,73 @@
 *  {
   box-sizing: border-box;
-  border: 2px solid lightcoral;
   border-radius: 5px;
 }
 
+ /*  Basic CSS*/
+
+.container {
+  background-color: skyblue;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 3px, solid, red;
+}
+
+
 .top-header  {
-  color: whitesmoke; 
+  color: whitesmoke;
   text-align: center;
   padding: 100px;
   margin-bottom: 1em;
   background-color: rgb(182, 98, 42);
 }
 
-.container {
-  display: inline-block;
-  background-color: lightskyblue;
-  width: 90%;
+/* .col {
+  display: flex;
   margin: auto;
-  border-top: 3px, solid, red;
-}
+  flex-wrap: wrap;
+} */
 
+/*
 .navbar ul {
   color: burlywood;
   text-align: center;
   padding: 0;
   margin: 0;
-}
+} */
 
 footer {
   padding: 1.5em;
   background: lightgrey;
 }
 
+
+/* .container  {
+display: inline-flex;
+flex-direction: row;
+justify-content: space-between;
+} */
+
+  /* Flexbox */
+
+
+# FlexBox Nav Bar'
+@media (min-width: 769px) {
+	.top-header,
+	.navbar	{
+		display: flex;
+	}
+
+/* .main-header	{
+	flex-direction: column;
+	align-items: center;
+}
+
+} */
+
+@media (min-width: 1025px) {
+	.navbar	{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
