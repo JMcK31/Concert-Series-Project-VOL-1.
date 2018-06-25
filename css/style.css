@@ -1,16 +1,16 @@
 *  {
   box-sizing: border-box;
-  border-radius: 5px;
 }
 
  /*  Basic CSS*/
+
+
 
 .container {
   background-color: skyblue;
   width: 90%;
   margin: 0 auto;
   padding: 20px;
-  border-top: 3px, solid, red;
 }
 
 
@@ -28,13 +28,12 @@
   flex-wrap: wrap;
 } */
 
-/*
+
 .navbar ul {
+  display: inline-flex;
   color: burlywood;
   text-align: center;
-  padding: 0;
-  margin: 0;
-} */
+} 
 
 footer {
   padding: 1.5em;
@@ -51,12 +50,15 @@ justify-content: space-between;
   /* Flexbox */
 
 
-# FlexBox Nav Bar'
+/* # FlexBox Nav Bar */
 @media (min-width: 769px) {
-	.top-header,
-	.navbar	{
-		display: flex;
-	}
+
+  
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 /* .main-header	{
 	flex-direction: column;
@@ -66,8 +68,10 @@ justify-content: space-between;
 } */
 
 @media (min-width: 1025px) {
-	.navbar	{
+	.navbar	ul {
 		flex-direction: row;
 		justify-content: space-between;
 	}
 }
+
+
