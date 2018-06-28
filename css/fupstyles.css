@@ -4,18 +4,12 @@
 
 /*  Basic CSS*/
 
-
 .main-container {
     background-color: skyblue;
     width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
-
-.navbar {
-     padding: 1.5em;
-}
-
 
 .top-header {
     color: whitesmoke;
@@ -26,26 +20,22 @@
 }
 
 .columns {
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
     margin: auto;
     flex-wrap: wrap;
 }
 
 .navbar ul {
-    display: flex;
-
+    display: inline-flex;
+    color: burlywood;
+    text-align: center;
     list-style-type: none;
     margin: auto;
 }
 
 footer {
-    display: -webkit-flex;
-    flex: wrap;
-    justify-content: space-between;
     padding: 1.5em;
     background: lightgrey;
-    list-style-type: none;
 }
 
 /* Flexbox */
@@ -57,15 +47,7 @@ footer {
         display: flex;
         justify-content: space-between;
     }
-.columns {
-    display: inline-flex;
-    flex-direction: row;
-    margin: auto;
-    flex-wrap: wrap;
 }
-
-}
-
 
 @media (min-width: 1025px) {
     /* .navbar	ul {

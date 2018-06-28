@@ -8,14 +8,16 @@
     <meta name="keywords" content="Sunset Concert Series, Foxhollow Farm, Music, Farm Concert,">
     <meta name="author" content="Jesse McKenzie">
     <title>Sunset Concert Series | Landing Page</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
-
   <body>
-  <div class="container">
+  
+    
   <header>
+    <div class="main-container">
+
         <!-- Navigation Buttons -->
       <nav class="navbar">
         <ul>
@@ -27,30 +29,35 @@
           <li><a href="https://foxhollow.com/">Foxhollow Farm</a></li>
         </ul>
       </nav>
-  <div class="container">
+ 
           <!-- Title -->
     <div class="top-header">
-      <h2>Foxhollow Farm Presents</h2>
-      <h1>Sunset Concert Series</h1>
+      <wrapper =class"container-fluid"
+        <h2>Foxhollow Farm Presents</h2>
+        <h1>Sunset Concert Series</h1>
+      </wrapper>
     </div>
   </header>
 
-  <!-- Lineup Column -->
-    <div class="column-one">
-      <img src="img/artists-dates.jpg" alt="Artist Lineup and Dates" title="Artist Lineup and Dates" height="auto" width="50%">
-    </div>
+  <!-- Main Body Columns -->
+    <div class="columns">
+      <!-- Artists and Dates -->
+      <div class="col-1">
+        <img src="img/artists-dates.jpg" alt="Artist Lineup and Dates" title="Artist Lineup and Dates" height="auto" width="75%">
+      </div>
 
-      <!-- Info Column -->
-    <div class="column-two">
-      <h3>2nd Friday of the Month May to September</h3>
-      <h2>Artists and Lineup</h2>
-      <p>May 11th Roanoke with Alanna Fugate & The Boxwine Prophets</br>June 8th Zach Longoria Project</br>July 13th Yapa with Hey Hey Honey</br>August 13th Bendigo Fletcher and Mark Charles Heidinger</br>September 14th</br>Brett Ratliff and The Local Honeys</p>
-    </div>
+        <!-- Info Column -->
+      <div class="col-2">
+        <h3>2nd Friday of the Month May to September</h3>
+        <h2>Artists and Lineup</h2>
+        <p>May 11th Roanoke with Alanna Fugate and The Boxwine Prophets</br>June 8th Zach Longoria Project</br>July 13th Yapa with Hey Hey Honey</br>August 13th Bendigo Fletcher and Mark Charles Heidinger</br>September 14th</br>Brett Ratliff and The Local Honeys</p>
+      </div>
 
-      <!-- Photo Slideshow Column -->
-    <div class="column-three">
-      <img src="https://placeimg.com/640/480/animals" alt="placeholdrer" title="photo gallery" height="auto" width="50%">
-    </div>
+        <!-- Photo Slideshow Column -->
+      <div class="col-3">
+        <img src="img/farmshot.jpg" alt="placeholdrer" title="photo gallery" height="auto" width="50%">
+      </div>
+    </div><!-- end container div -->
 
     <!-- footer -->
   <footer class="footer">
@@ -65,11 +72,9 @@
       <li><a href="https://foxhollow.com/">
       <img src="img/fhflogo_white.png" title="Foxhollow.com Link" alt="Foxhollow Farm Link" class="social-icon" width=60px height=60px></a></li>
     </ul>
-
-  </div>
-  </footer>
+ 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
-  </div> /*conainter*/
+  </footer>
   </body>
 </html>
