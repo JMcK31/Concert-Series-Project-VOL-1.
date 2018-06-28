@@ -2,70 +2,120 @@
     box-sizing: border-box;
 }
 
-/*  Basic CSS*/
+/*  baseline CSS*/
 
-
-.main-container {
+body {
     background-color: skyblue;
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    margin:  auto;
 }
 
-.navbar {
-     padding: 1.5em;
+footer {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1.5em;
+    background: #7d5425;
 }
 
+/* .footer #facebook {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} */
+
+h1,
+h2,
+h3,
+p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* end baseline css */
+
+/* Class Styles */
+
+/* /class styles */
+
+/* Navbar */
+
+.navbar ul {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: #7d5425;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #d43c7d;
+    color: whitesmoke;
+}
+
+li a::selection {
+    background-color: #d43c7d;
+    color: whitesmoke
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/* /Navbar */
 
 .top-header {
-    color: whitesmoke;
+    background-image: url("../img/farmshot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     padding: 100px;
     margin-bottom: 1em;
     background-image: rgb(182, 98, 42);
 }
 
-.columns {
+/* .main-container {
     display: inline-flex;
     flex-direction: column;
     margin: auto;
     flex-wrap: wrap;
-}
-
-.navbar ul {
-    display: flex;
-
-    list-style-type: none;
-    margin: auto;
-}
-
-footer {
-    display: -webkit-flex;
-    flex: wrap;
-    justify-content: space-between;
-    padding: 1.5em;
-    background: lightgrey;
-    list-style-type: none;
-}
+} */
 
 /* Flexbox */
 
 /* # FlexBox Nav Bar */
+
+/* Reponse */
 
 @media (min-width: 769px) {
     .navbar ul {
         display: flex;
         justify-content: space-between;
     }
-.columns {
-    display: inline-flex;
-    flex-direction: row;
-    margin: auto;
-    flex-wrap: wrap;
+    .main-container {
+        display: inline-flex;
+        flex-direction: row;
+        margin: auto;
+        flex-wrap: wrap;
+    }
 }
-
-}
-
 
 @media (min-width: 1025px) {
     /* .navbar	ul {
