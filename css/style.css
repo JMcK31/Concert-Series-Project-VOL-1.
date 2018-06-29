@@ -3,9 +3,10 @@
 }
 
 /*  baseline CSS*/
-
+ 
 body {
-    background-color: skyblue;
+    background: linear-gradient( #7b76af, #e1b68b);
+    )
     width: 100%;
     margin:  auto;
 }
@@ -37,14 +38,34 @@ p {
 
 /* Class Styles */
 
+.top-header {
+    background-image: url("../img/farmshot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+    margin-bottom: 1em;
+}
+
+.social-icon  {
+    border-radius: 10px;
+}
+
+/* .main-container {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+} */
+
 /* /class styles */
 
 /* Navbar */
 
-.navbar {
+#navbar {
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     overflow: hidden;
     background-color: #7d5425;
     position: -webkit-sticky;
@@ -68,35 +89,22 @@ li a {
 li a:hover {
     background-color: #d43c7d;
     color: whitesmoke;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 li a::selection {
     background-color: #d43c7d;
     color: whitesmoke
+    border-radius: 10px;
 }
 
 .active {
     background-color: #4CAF50;
+    border-radius: 10px;
 }
 
 /* /Navbar */
-
-.top-header {
-    background-image: url("../img/farmshot.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 100px;
-    margin-bottom: 1em;
-    background-image: rgb(182, 98, 42);
-}
-
-/* .main-container {
-    display: inline-flex;
-    flex-direction: column;
-    margin: auto;
-    flex-wrap: wrap;
-} */
 
 /* Flexbox */
 
@@ -105,7 +113,7 @@ li a::selection {
 /* Reponse */
 
 @media (min-width: 769px) {
-    .navbar ul {
+    #navbar ul {
         display: flex;
         justify-content: space-between;
     }
