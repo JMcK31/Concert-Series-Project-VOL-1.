@@ -6,7 +6,6 @@
  
 body {
     background: linear-gradient( #7b76af, #e1b68b);
-    )
     width: 100%;
     margin:  auto;
 }
@@ -33,6 +32,8 @@ p {
     color: whitesmoke;
     text-align: center;
 }
+
+
 
 /* end baseline css */
 
@@ -95,7 +96,7 @@ li a:hover {
 
 li a::selection {
     background-color: #d43c7d;
-    color: whitesmoke
+    color: whitesmoke;
     border-radius: 10px;
 }
 
