@@ -3,14 +3,14 @@
 }
 
 /*  baseline CSS*/
- 
+
 body {
     background: linear-gradient( #7b76af, #e1b68b);
     width: 100%;
     margin:  auto;
 }
 
-footer {
+footer  {
     display: flex;
     flex: wrap;
     justify-content: space-between;
@@ -39,7 +39,7 @@ p {
 
 /* Class Styles */
 
-.top-header {
+.banner {
     background-image: url("../img/farmshot.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,20 +63,41 @@ p {
 
 /* Navbar */
 
-#navbar {
-    margin: 0;
+.navbar, ul, li {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     overflow: hidden;
     background-color: #7d5425;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
 }
 
-li {
+ul  {
+    list-style-type: none;
+}
+
+/* li {
     float: left;
     list-style-type: none;
+} attempting to add flex and column to mobile nav this */
+
+.items, ul, li
+    {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+}
+
+.active {
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+.brand, .logo  {
+    float: right;
+    margin-left: auto;
 }
 
 li a {
@@ -98,11 +119,7 @@ li a::selection {
     background-color: #d43c7d;
     color: whitesmoke;
     border-radius: 10px;
-}
 
-.active {
-    background-color: #4CAF50;
-    border-radius: 10px;
 }
 
 /* /Navbar */
@@ -113,10 +130,12 @@ li a::selection {
 
 /* Reponse */
 
-@media (min-width: 769px) {
-    #navbar ul {
+@media all and (min-width: 769px) {
+    .navbar, .items, ul, li {
         display: flex;
         justify-content: space-between;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     .main-container {
         display: inline-flex;
