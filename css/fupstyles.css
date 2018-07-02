@@ -25,7 +25,7 @@
     flex-wrap: wrap;
 }
 
-.navbar ul {
+#navbar ul {
     display: inline-flex;
     color: burlywood;
     text-align: center;
@@ -46,6 +46,7 @@ footer {
     .navbar ul {
         display: flex;
         justify-content: space-between;
+        margin-left: auto;
     }
 }
 
