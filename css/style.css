@@ -64,24 +64,22 @@ p {
 /* Navbar */
 
 .navbar, ul, li {
+    margin: 0;
     padding-top: 15px;
+    class="items"
     padding-bottom: 5px;
     overflow: hidden;
     background-color: #7d5425;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
 }
 
 ul  {
     list-style-type: none;
 }
 
-/* li {
-    float: left;
-    list-style-type: none;
-} attempting to add flex and column to mobile nav this */
-
-.items, ul, li
+.items, li
     {
     display: flex;
     flex-direction: column;
@@ -124,16 +122,14 @@ li a::selection {
 
 /* /Navbar */
 
-/* Flexbox */
-
-/* # FlexBox Nav Bar */
 
 /* Reponse */
 
 @media all and (min-width: 769px) {
-    .navbar, .items, ul, li {
+    .items, li {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
         padding-top: 5px;
         padding-bottom: 5px;
     }
@@ -143,6 +139,12 @@ li a::selection {
         margin: auto;
         flex-wrap: wrap;
     }
+}
+
+footer, ul, li {
+    display: flex;
+    flex-direction: row;
+    
 }
 
 @media (min-width: 1025px) {
