@@ -64,16 +64,14 @@ p {
 
 /* Navbar */
 
-.navbar, ul, li {
+nav.navbar, ul {
     margin: 0;
-    padding-top: 15px;
-    class="items"
+    padding-top: 10px;
     padding-bottom: 5px;
     overflow: hidden;
     background-color: #7d5425;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
 }
 
 ul  {
@@ -132,17 +130,18 @@ li a::selection {
 
     #mc_embed_signup .button {
         background-color: #543919;
+        color: whitesmoke;
     }
 
     label {
-        color: white;
+        color: #f5f5f5;
     }
 
 
 /* Reponse */
 
-@media all and (min-width: 769px) {
-    .items, li {
+@media all and (min-width: 799px) {
+   nav.navbar, ul.items, li {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -165,9 +164,20 @@ footer.wrap, ul, li {
 }
 
 @media (min-width: 1025px) {
-    /* .navbar	ul {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-} */
-}
+    
+    /* Need to figure out how to float the logo to the top right, hide the logo at queries below 1025 or 799 */
+    /* nav.navbar,
+    ul.items,
+    li {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    }
+
+    }
+
+    .logo {
+        float: right;
+        margin-left: auto;
+    }  */
