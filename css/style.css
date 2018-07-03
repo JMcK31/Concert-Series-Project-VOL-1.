@@ -10,9 +10,10 @@ body {
     margin:  auto;
 }
 
-footer  {
+footer, .wrap, ul, li  {
     display: flex;
     flex: wrap;
+    flex-direction: column;
     justify-content: space-between;
     margin: auto;
     padding: 1.5em;
@@ -122,6 +123,21 @@ li a::selection {
 
 /* /Navbar */
 
+    #mc_embed_signup {
+        background: #C84687;
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
+        width: 100%;
+    }
+
+    #mc_embed_signup .button {
+        background-color: #543919;
+    }
+
+    label {
+        color: white;
+    }
+
 
 /* Reponse */
 
@@ -141,10 +157,11 @@ li a::selection {
     }
 }
 
-footer, ul, li {
+footer.wrap, ul, li {
     display: flex;
     flex-direction: row;
-    
+    justify-content: center;
+
 }
 
 @media (min-width: 1025px) {
