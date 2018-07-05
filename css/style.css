@@ -10,10 +10,9 @@ body {
     margin:  auto;
 }
 
-footer, .wrap, ul, li  {
+footer.wrap, ul, li  {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
     margin: 0;
     padding: 1.5em;
     background: #7d5425;
@@ -72,11 +71,6 @@ ul.items, li
     align-self: flex-start;
 }
 
-
-.active {
-    background-color: #4CAF50;
-    border-radius: 10px;
-}
 
 /* .brand, .logo  {
     float: right;
