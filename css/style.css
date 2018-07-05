@@ -12,19 +12,12 @@ body {
 
 footer, .wrap, ul, li  {
     display: flex;
-    flex: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 0;
     padding: 1.5em;
     background: #7d5425;
 }
-
-/* .footer #facebook {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-} */
 
 h1,
 h2,
@@ -53,18 +46,12 @@ p {
     border-radius: 10px;
 }
 
-/* .main-container {
-    display: inline-flex;
-    flex-direction: column;
-    margin: auto;
-    flex-wrap: wrap;
-} */
 
 /* /class styles */
 
-/* Navbar */
+/* Navbar nav.navbar, ul*/
 
-nav.navbar, ul {
+#navbar {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -78,24 +65,23 @@ ul  {
     list-style-type: none;
 }
 
-.items, li
+ul.items, li
     {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
 }
 
-}
 
 .active {
     background-color: #4CAF50;
     border-radius: 10px;
 }
 
-.brand, .logo  {
+/* .brand, .logo  {
     float: right;
     margin-left: auto;
-}
+} */
 
 li a {
     display: block;
@@ -121,6 +107,7 @@ li a::selection {
 
 /* /Navbar */
 
+/* e-newsletter signup */
     #mc_embed_signup {
         background: #C84687;
         clear: left;
@@ -136,12 +123,12 @@ li a::selection {
     label {
         color: #f5f5f5;
     }
-
+/* /e-newsletter sign-up */
 
 /* Reponse */
 
 @media all and (min-width: 799px) {
-   nav.navbar, ul.items, li {
+    nav.navbar, ul.items, li {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -156,10 +143,10 @@ li a::selection {
     }
 }
 
-footer.wrap, ul, li {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    footer.wrap, ul, li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
 }
 
